@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <title>3D Model Pop-up</title>
+</head>
+<body>
+    <!-- Search bar -->
+    <input type="text" id="searchBar" placeholder="Search for an image...">
+    <div class="top-container">
+        <img class="logo" src="https://assets.onecompiler.app/42qqjwryz/42qqhc3fm/herb.png" alt="herb image">
+        <h1>Virtual Herbarium</h1>
+        <h3>-Unveiling Nature's Healing Secrets</h3>
+    </div>
+    
+    <!-- Modal to show the 3D model and information -->
+    <div id="modelModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <div id="modelContainer">
+                <!-- Canvas for 3D model will be created dynamically -->
+            </div>
+            
+            <div id="modelInfo">
+                <h4 id="speak1">Neem tree 3D model</h4>
+                <details>
+                    <summary><h4>Info</h4></summary>
+                <p id="speak2">
+                    
+                        Scientific name : Azadrirachta Indica <br>
+                        Uses : <br>
+                        1. Skin care - Used to treat acne, eczema and other skin conditions <br>
+                        2. Dental care - Neem twigs are traditionally used as toothbrushss to maintain oral hygiene <br>
+                        3. Medicinal: Neem leaves and bark are used to treat infections, fever, and digestive issues. <br>
+
+                        Places : <br> Neem trees are primarily found in South Asia, particularly in India, Pakistan, and Sri Lanka, but they also grow in tropical and subtropical regions worldwide <br>
+
+                        Conditions : <br>Neem trees thrive in hot, arid to semi-arid climates with temperatures ranging from 21°C to 32°C (70°F to 90°F). They prefer well-drained sandy or loamy soils but can grow in a variety of soil types. <br>
+
+                        Remidies : <br>
+                        1.Consuming neem juice or supplements is believed to purify the blood and boost immunity. <br>
+                        2.Neem oil is used to treat dandruff, lice, and promote healthy hair growth. <br>
+                    
+                </p>
+                <!-- Voice Button to speak the text -->
+                </details>
+                    <button id="voiceButton">Speak</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="searchResults">
+        <!-- Container for search results -->
+        <div id="neem" class="image-container">
+            <img width="290px" height="350px" class="trigger-image" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="neem" data-name="neem">
+            <h4>Neem</h4>
+           </div>
+        <div id="tulsi" class="image-container">
+            <img width="290px" height="350px" class="trigger-image" src="https://media.istockphoto.com/id/1506951654/photo/a-closeup-top-shot-of-basil-plant-also-called-tulsi-plant-in-a-red-mud-pot-in-an-indian.jpg?s=2048x2048&w=is&k=20&c=ZRl_wJPs_Yf3DJmcH8Jo8ZfcBbSuJ1WHm_YnfOXh8ss=" alt="tulsi" data-name="tulsi">
+            <h4>tulsi</h4>
+        </div>
+        <div id="gotukola" class="image-container">
+            <img width="290px" height="350px" class="trigger-image" src="https://media.istockphoto.com/id/1197667937/photo/close-up-leaf-centella-asiatica.jpg?s=2048x2048&w=is&k=20&c=XOmOH3QXq4lqrNUfXLN0EiSKbqTWCXSYsYyn8arzOss=" alt="gotukola" data-name="gotukola">
+            <h4>Gotukola</h4>
+        </div>
+    </div>
+    <div id="notAvailable" class="not-available">Not Available</div>
+
+    <!-- JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+<div class="footer">
+    <h4>About us</h4>
+    <p>
+     to virtual herbarium, your gateway to a lush, virtual world of medicinal plants. <br>
+    At HerbalVista, we’re passionate about making the rich world of herbal medicine accessible to everyone, everywhere. <br>
+    Our platform combines cutting-edge technology with traditional herbal wisdom to bring you an immersive experience that educates and inspires. <br>
+    </p>
+    <h4>contact us</h4>
+    <p>
+        srividyapullamaraju@gmail.com <br> 
+        mobile.no:9246545450 <br>
+    </p>
+</div>
+</html>
